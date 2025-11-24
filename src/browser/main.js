@@ -9,11 +9,11 @@ import * as iso9660 from "../iso9660.js";
 const ON_LOCALHOST = !location.hostname.endsWith("copy.sh");
 
 const DEFAULT_NETWORKING_PROXIES = ["wss://relay.widgetry.org/", "ws://localhost:8080/"];
-const DEFAULT_MEMORY_SIZE = 128;
-const DEFAULT_VGA_MEMORY_SIZE = 8;
+const DEFAULT_MEMORY_SIZE = 8192;
+const DEFAULT_VGA_MEMORY_SIZE = 16;
 const DEFAULT_BOOT_ORDER = 0;
 
-const MAX_ARRAY_BUFFER_SIZE_MB = 2000;
+const MAX_ARRAY_BUFFER_SIZE_MB = 8192;
 
 function query_append()
 {
